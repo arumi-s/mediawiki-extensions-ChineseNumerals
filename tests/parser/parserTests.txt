@@ -1,0 +1,31 @@
+!! Version 2
+# MediaWiki 'ChineseNumerals' extension Parser test cases
+# Author: Arumi
+
+##
+## 1. Arabic Numerals to Chinese Numerals
+## #cnrconvert
+##
+
+!! test
+'cnrconvert'
+!! wikitext
+"{{#cnrconvert: 12345}}"
+!! html
+<p>一万二千三百四十五
+</p>
+!! end
+
+##
+## 2. Chinese Numerals to Arabic Numerals
+## #cnrconvert
+##
+
+!! test
+'cnrrecover'
+!! wikitext
+"{{#cnrrecover: 三百零五}}"
+!! html
+<p>305
+</p>
+!! end
